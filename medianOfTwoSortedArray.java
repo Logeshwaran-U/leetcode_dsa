@@ -15,7 +15,7 @@ class medianOdTwoSortedArray{
             k++;
         }
         Arrays.sort(n1);
-
+        // if size of merged array is odd just return the middle value ,if itss even add both (middle and earlier value) and divide them by two to get median
         if(totalLength %2 == 0)
         {
             return (n1[totalLength/2]+n1[(totalLength/2)-1])/2.0;
